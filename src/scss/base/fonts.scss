@@ -1,0 +1,36 @@
+/*
+    @package CashMoney-NFT
+    --------------------------------------------------
+    |   FONT STYLES                                  |
+    --------------------------------------------------
+*/
+
+@font-face {
+    font-family: "Avenir";
+    src: url('./assets/fonts/Avenir.ttc');
+}
+
+@font-face {
+    font-family: "Azonix";
+    src: url('./assets/fonts/AzonixRegular.otf');
+}
+
+@font-face {
+    font-family: "DigitalSansEF";
+    src: url('./assets/fonts/DigitalSansEFBold.ttf');
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url('./assets/fonts/Impact.ttf');
+}
+
+.strong {
+    font-family: 'Azonix', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.green {
+    color: rgb(28, 164, 105);
+}

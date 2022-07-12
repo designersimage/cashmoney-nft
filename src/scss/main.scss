@@ -1,0 +1,22 @@
+/*
+    @package CashMoney-NFT
+    --------------------------------------------------
+    |   MAIN THEME STYLES                            |
+    --------------------------------------------------
+*/
+
+// Main Base Styles
+@import './base/fonts.scss';
+@import './base/reset.scss';
+@import './base/layout.scss';
+@import './base/buttons.scss';
+@import './base/links.scss';
+
+// Main Component Styles
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/modal.scss';
+
+// Main Page Styles
+@import './pages/home.scss';
+

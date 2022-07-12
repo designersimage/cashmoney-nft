@@ -1,0 +1,80 @@
+/*
+    @package CashMoney-NFT
+    --------------------------------------------------
+    |   LINK STYLES                                  |
+    --------------------------------------------------
+*/
+
+.buy-button {
+    background: white;
+    border: solid 1px black;
+    color: black;
+    font-family: 'DigitalSansEF';
+    font-size: 1.6em;
+    font-weight: bolder;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+    .buy-button {
+        font-size: 1.8em;
+        font-weight: bold;
+        padding: 10px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    
+}
+
+@media screen and (min-width: 410px) {
+    .buy-button {
+        font-size: 2.1em;
+        font-weight: bold;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .buy-button {
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 15px 45px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1600px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
+}
