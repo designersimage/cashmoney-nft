@@ -77,7 +77,22 @@
                 </div>
                 <img class="cash-money-icon" src="../assets/images/cash_money_icon.svg" onerror="this.src='./assets/images/cash_money_icon.png'; this.onerror=null;" alt="Cash Money Icon">
             </div>
+            <div class="home-container">
+                <h1>Cash Money White Paper</h1>
+                <p class="links"><a href="./assets/CashMoney-Whitepaper.pdf" class="download-link">Download PDF ></a></p>
+                <div id="adobe-dc-view"></div>
+            </div>
         </main>
+        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
         <script src="./assets/main.min.js" async defer></script>
+        <script type="text/javascript">
+            document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                var adobeDCView = new AdobeDC.View({clientId: "5dee382c90254614856545faaeea6489", divId: "adobe-dc-view"});
+                adobeDCView.previewFile({
+                    content:{location: {url: "./assets/CashMoney-Whitepaper.pdf"}},
+                    metaData:{fileName: "CashMoney-Whitepaper.pdf"}
+                }, {embedMode: "IN_LINE"});
+            });
+        </script>
     </body>
 </html>
