@@ -5,8 +5,236 @@
     --------------------------------------------------
 */
 
-@media screen and (min-width: 360px) {
+.header__main {
+    background: black;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 60px;
+    left: 0;
+    position: sticky !important;
+    top: 0;
+    width: 100%;
+    z-index: 888;
+
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .header__logo {
+        img#logo {
+            height: 30px;
+        }
+    }
+
+    .header__title {
+        img#logo-title {
+            height: 40px;
+        }
+    }
+
+    .menu {
+        background: black;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 20px 10px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 280px;
+
+        .menu__nav {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            z-index: 0;
     
+            li {
+                border-top: solid 1px #333333;
+                width: 100%;
+    
+                a {
+                    color: white;
+                    display: block;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    padding: 20px 0;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: lowercase;
+                    @include animate( color, 250ms );
+
+                    &:active {
+                        color: #cccccc;
+                    }
+                    &:hover {
+                        color: #cccccc;
+                    }
+                }
+
+                &.current-menu-item a {
+                    color: #cccccc;
+                    font-weight: 500;
+                }
+                &.current-page-ancestor a {
+                    color: #333333;
+                    font-weight: 500;
+                }
+    
+            }
+
+            li:first-child {
+                border: none;
+            }
+        }
+
+        &.closed {
+            transform: scaleY(0);
+            transform-origin: top;
+            @include animate( transform, 250ms );
+
+            .menu__nav {
+                opacity: 0;
+                @include animate( opacity, 250ms, -50ms );
+            }
+        }
+
+        &.open {
+            transform: scaleY(100%);
+            transform-origin: top;
+            @include animate( transform, 250ms );
+
+            .menu__nav {
+                opacity: 100%;
+                @include animate( opacity, 250ms, 50ms );
+            }
+        }
+    }  
+
+    .menu-toggle {
+        background: none;
+        border: none;
+        color: #cccccc;
+        height: 2.4rem;
+        padding: 0;
+        position: relative;
+        width: 2.4rem;
+
+        &.closed .bar {
+            background: #cccccc;
+            border-radius: 1px;
+            content: ' ';
+            display: block;
+            height: 2px;
+            left: 3px;
+            position: absolute;
+            width: 75%;
+            @include animate( all, 250ms );
+        }
+        &.closed .bar:nth-child(1) {
+            top: 6px;
+        }
+        &.closed .bar:nth-child(2) {
+            opacity: 100%;
+            top: 11px;
+        }
+        &.closed .bar:nth-child(3) {
+            top: 16px;
+        }
+
+        &.open .bar {
+            background: rgb(172, 60, 61);
+            border-radius: 1px;
+            content: ' ';
+            display: block;
+            height: 2px;
+            left: 3px;
+            position: absolute;
+            width: 75%;
+            @include animate( all, 250ms );
+        }
+        &.open .bar:nth-child(1) {
+            top: 11px;
+            transform: rotate(45deg);
+        }
+        &.open .bar:nth-child(2) {
+            opacity: 0;
+            top: 11px;
+        }
+        &.open .bar:nth-child(3) {
+            top: 11px;            
+            transform: rotate(-45deg);
+        }
+
+        &:active {
+            background: none;
+            color: #cccccc;
+        }
+        &:hover {
+            color: #cccccc;
+        }
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .header__main {
+        height: 70px;
+
+        .header__logo {
+            img#logo {
+                height: 40px;
+            }
+        }
+
+        .header__title {
+            img#logo-title {
+                height: 50px;
+            }
+        }
+
+        .menu {
+            top: 70px;
+        }
+
+        .menu-toggle {
+            height: 3.4rem;
+            width: 3.4rem;
+
+            &.closed .bar {
+                border-radius: 2px;
+                height: 3px;
+                left: 4px;
+            }
+            &.closed .bar:nth-child(1) {
+                top: 8px;
+            }
+            &.closed .bar:nth-child(2) {
+                top: 15px;
+            }
+            &.closed .bar:nth-child(3) {
+                top: 22px;
+            }
+
+            &.open .bar {
+                border-radius: 2px;
+                height: 3px;
+                left: 4px;
+            }
+            &.open .bar:nth-child(1) {
+                top: 15px;
+            }
+            &.open .bar:nth-child(3) {
+                top: 15px;  
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 375px) {
@@ -14,7 +242,56 @@
 }
 
 @media screen and (min-width: 410px) {
-    
+    .header__main {
+        height: 80px;
+
+        .header__logo {
+            img#logo {
+                height: 40px;
+            }
+        }
+
+        .header__title {
+            img#logo-title {
+                height: 50px;
+            }
+        }
+
+        .di-menu {
+            top: 80px;
+        }
+
+        .di-menu-toggle {
+            height: 4rem;
+            width: 4rem;
+            font-size: 4rem;
+
+            &.closed .bar {
+                height: 4px;
+                left: 5px;
+            }
+            &.closed .bar:nth-child(1) {
+                top: 10px;
+            }
+            &.closed .bar:nth-child(2) {
+                top: 18px;
+            }
+            &.closed .bar:nth-child(3) {
+                top: 26px;
+            }
+
+            &.open .bar {
+                height: 4px;
+                left: 5px;
+            }
+            &.open .bar:nth-child(1) {
+                top: 18px;
+            }
+            &.open .bar:nth-child(3) {
+                top: 18px;  
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 425px) {

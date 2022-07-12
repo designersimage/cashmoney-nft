@@ -17,13 +17,34 @@ body {
 }
 
 main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+
+    .nft-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+.border-height-thin {
+    content: '';
+    height: 1px;
     margin: 0 auto;
     width: 90%;
 }
+
+.border-height-3 {
+    content: '';
+    height: 3px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 .border-height-5 {
     content: '';
     height: 5px;
@@ -57,18 +78,14 @@ main {
 .gold-gradient {
     background: linear-gradient(to right, rgb(216,143,40) 0%, rgb(251, 241, 125) 19.8529%, rgb(214, 151, 40) 33.5784%, rgb(165, 114, 42) 47.3039%, rgb(245, 204, 106) 68.1373%, rgb(214, 151, 40) 87.0098%, rgb(245, 204, 106) 100%);
 }
-/* 
-    mobile background position: regular
-    mobile background size: cover
-
-    tablet background position-x: 0
-    tablet background size: unset
-
-    desktop background unchaged
- */
 
 @media screen and (min-width: 360px) {
-    
+    .border-height-thin {
+        content: '';
+        height: 2px;
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 375px) {
@@ -76,7 +93,12 @@ main {
 }
 
 @media screen and (min-width: 410px) {
-    
+    .border-height-thin {
+        content: '';
+        height: 3px;
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 425px) {

@@ -28,9 +28,127 @@
 .strong {
     font-family: 'Azonix', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.large {
+    font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.medium {
+    font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.small {
+    font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.x-small {
+    font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.5em;
+    text-align: center;
+    word-break: break-all;
 }
 
 .green {
     color: rgb(28, 164, 105);
+}
+.white {
+    color: white;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+    .title {
+        font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .large {
+        font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        font-weight: 100;
+        text-align: center;
+    }
+    
+    .medium {
+        font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .small {
+        font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    
+    .x-small {
+        font-family: 'DigitalSansEF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.6em;
+        text-align: center;
+        word-break: break-all;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    
+}
+
+@media screen and (min-width: 410px) {
+    
+}
+
+@media screen and (min-width: 425px) {
+    
+}
+
+@media screen and (min-width: 540px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1600px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
 }
