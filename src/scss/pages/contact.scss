@@ -5,13 +5,54 @@
     --------------------------------------------------
 */
 
+.contact-container {
+    h1 {
+        color: #cccccc;
+        font-family: 'Impact', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3.2em;
+        font-weight: 400;
+        letter-spacing: .5px;
+        margin: 10px 0 5px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: #999999;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    form {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px 0 40px;
+        width: 100%;
+    }
+}
+
 
 @media screen and (min-width: 360px) {
     
 }
 
 @media screen and (min-width: 375px) {
+    .contact-container {
+        h1 {
+            font-size: 3.8em;
+            margin: 10px 0 5px;
+        }
     
+        p {
+            font-size: 1.6em;
+            margin-bottom: 30px;
+        }
+    
+        form {
+            margin: 30px 0 40px;
+        }
+    }
 }
 
 @media screen and (min-width: 390px) {
@@ -19,7 +60,21 @@
 }
 
 @media screen and (min-width: 410px) {
+    .contact-container {
+        h1 {
+            font-size: 4.2em;
+            margin: 10px 0 5px;
+        }
     
+        p {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+    
+        form {
+            margin: 30px 0 40px;
+        }
+    }
 }
 
 @media screen and (min-width: 425px) {

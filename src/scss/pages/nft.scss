@@ -100,7 +100,7 @@ p.intro {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
 
     .token-info {
@@ -162,7 +162,7 @@ p.intro {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
         margin: 0px 0 40px;
         width: 100%;
 
@@ -173,6 +173,11 @@ p.intro {
             flex: 0 100%;
             padding-bottom: 5px;
             width: 100%;
+        }
+
+        .form-range {
+            flex: 0 100%;
+            margin-bottom: 15px;
         }
     }
 
@@ -332,7 +337,7 @@ p.intro {
             align-items: center;
             display: flex;
             justify-content: space-between;
-            margin: 30px 0 40px;
+            margin: 30px 0 30px;
     
             p {
                 color: white;
@@ -483,7 +488,7 @@ p.intro {
             align-items: center;
             display: flex;
             justify-content: space-between;
-            margin: 30px 0 40px;
+            margin: 30px 0 30px;
     
             p {
                 color: white;
@@ -591,6 +596,20 @@ p.intro {
         .button-info {
             p {
                 font-size: 1.1em;
+            }
+        }
+
+        .button-info2 {
+            margin: 0px 0 40px;
+    
+            h2 {
+                font-size: 1.8em;
+                padding-bottom: 10px;
+            }
+
+            .form-range {
+                flex: 0 100%;
+                margin-bottom: 20px;
             }
         }
     }
@@ -780,6 +799,17 @@ p.intro {
         .button-info {
             p {
                 font-size: 1.3em;
+            }
+        }
+        .button-info2 {
+            margin: 0px 0 40px;
+    
+            h2 {
+                font-size: 2.1em;
+            }
+
+            .form-range {
+                margin-bottom: 25px;
             }
         }
     }

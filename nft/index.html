@@ -10,6 +10,8 @@
         <title>Cash Money NFT - Info</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cash Money Coin">
+        <link rel="icon" href="./assets/images/cash_money_coin.png">
         <link rel="stylesheet" href="../assets/main.min.css">
         <link rel="stylesheet" type="text/css" href="https://payments.nftpay.xyz/css/iframe_inject.css" />
     </head>
@@ -80,14 +82,16 @@
                     </div>
 
                     <div class="button-info">
-                        <button onclick="show_creatify_popup()" class="buy-button">Buy with card</button>
+                        <button onclick="show_creatify_popup()" class="button" type="button">Buy with card</button>
                         <p class="info">The CMC artists nft's are on the Binance smart chain blockchain. Fair launch cost to mint 1.5BNB</p>
                     </div>
 
                     <div class="button-info2">
                         <h2 id="remaining">NFTs Remain: 0</h2>
-                        <a href="#" class="buy-button">Connect</a>
-                        <a href="#" class="buy-button">Mint</a>
+                        <input type="range" class="form-range" min="1" max="10" step="1" value="1" id="mintSlider" disabled="">
+                        <button class="button" id="connect" type="button">Connect</a>
+                        <button class="button" id="mint" type="button">Mint</a>
+                        <div id="my-nfts"></div>
                     </div>
                 </div>
 

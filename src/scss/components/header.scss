@@ -63,12 +63,14 @@
                 a {
                     color: white;
                     display: block;
+                    font-family: 'Avenir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-size: 1.8rem;
                     font-weight: 300;
+                    letter-spacing: .5px;
                     padding: 20px 0;
                     text-align: center;
                     text-decoration: none;
-                    text-transform: lowercase;
+                    text-transform: uppercase;
                     @include animate( color, 250ms );
 
                     &:active {
