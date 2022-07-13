@@ -10,10 +10,13 @@ body {
     background-image: url("./images/desktop_marble.png");
     background-repeat: repeat;
     background-size: cover;
-    min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
+
+    &:first-child {
+        min-height: 100vh;
+    }
 }
 
 main {

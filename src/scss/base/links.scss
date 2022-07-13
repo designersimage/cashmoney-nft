@@ -9,7 +9,7 @@
     background: white;
     border: solid 1px black;
     color: black;
-    font-family: 'DigitalSansEF';
+    font-family: 'Impact';
     font-size: 1.6em;
     font-weight: bolder;
     padding: 5px 20px;
@@ -30,6 +30,14 @@
     &:visited {
         color: white;
         text-decoration: none;
+    }
+}
+
+.grey-link {
+    color: #999999;
+
+    &:visited {
+        color: #999999;
     }
 }
 
