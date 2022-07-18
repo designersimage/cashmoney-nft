@@ -206,15 +206,233 @@
 }
 
 @media screen and (min-width: 540px) {
+    .border-container {
     
+        .content {
+    
+            img.coin-text {
+                margin: 60px 0 2px;
+                width: 45%;
+            }
+    
+            .symbol, .total_supply, .tokenomics, .contact_address, .visit_online {
+                margin: 8px 0;
+
+                p {
+                    line-height: 1.4;
+                    padding: 2px 0;
+                }
+            }
+        }
+        img.cash-money-icon {
+            bottom: 5%;
+            left: 40%;
+            position: absolute;
+            width: 20%;
+        }
+    }
+
+    .home-container {
+        h1 {
+            font-size: 2.8em;
+            letter-spacing: .5px;
+            margin: 40px 0 10px;
+        }
+    
+        p.links {
+            font-size: 1.6em;
+        }
+    
+        #adobe-dc-view {
+            height: calc(100vw * .9 * 1.2941);
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
+    .border-container {
+        margin: 60px auto 20px;
+        max-width: 768px;
+
+        img.home_bg {
+            margin-left: -10%;
+            width: 120%;
+            z-index: -1;
+        }
     
+        .content {
+            // background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            height: 42%;
+            left: 29%;
+            top: 19.5%;
+            width: 41%;
+
+            img.coin-text {
+                margin: 80px 0 2px;
+                width: 45%;
+            }
+    
+            .symbol, .total_supply, .tokenomics, .contact_address, .visit_online {
+                margin: 8px 0;
+
+                p {
+                    line-height: 1.4;
+                    padding: 2px 0;
+                }
+            }
+        }
+        img.cash-money-icon {
+            bottom: 5%;
+            left: 42.5%;
+            position: absolute;
+            width: 15%;
+        }
+    }
+    .home-container {
+        max-width: 768px;
+
+        h1 {
+            font-size: 3.6em;
+            letter-spacing: .5px;
+            margin: 40px 0 10px;
+        }
+    
+        p.links {
+            font-size: 1.8em;
+        }
+    
+        #adobe-dc-view {
+            height: calc(768px * .9 * .85 * 1.2941);
+            margin-bottom: 80px;
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .border-container {
+        margin: 60px auto 20px;
+        max-width: 768px;
+
+        img.home_bg {
+            margin-left: -10%;
+            width: 120%;
+            z-index: -1;
+        }
+    
+        .content {
+            // background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            height: 42%;
+            left: 29%;
+            top: 19.5%;
+            width: 41%;
+
+            img.coin-text {
+                margin: 90px 0 2px;
+                width: 45%;
+            }
+    
+            .symbol, .total_supply, .tokenomics, .contact_address, .visit_online {
+                margin: 10px 0;
+
+                p {
+                    line-height: 1.4;
+                    padding: 2px 0;
+                }
+            }
+        }
+        img.cash-money-icon {
+            bottom: 5%;
+            left: 42.5%;
+            position: absolute;
+            width: 15%;
+        }
+    }
+    .home-container {
+        max-width: 768px;
+
+        h1 {
+            font-size: 3.6em;
+            letter-spacing: .5px;
+            margin: 40px 0 10px;
+        }
+    
+        p.links {
+            font-size: 1.8em;
+        }
+    
+        #adobe-dc-view {
+            height: calc(768px * .9 * .85 * 1.2941);
+            margin-bottom: 80px;
+            width: 85%;
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .border-container {
+        margin: 60px auto 20px;
+        max-width: 768px;
+
+        img.home_bg {
+            margin-left: -10%;
+            width: 120%;
+            z-index: -1;
+        }
     
+        .content {
+            // background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            height: 42%;
+            left: 29%;
+            top: 19.5%;
+            width: 41%;
+
+            img.coin-text {
+                margin: 100px 0 2px;
+                width: 45%;
+            }
+    
+            .symbol, .total_supply, .tokenomics, .contact_address, .visit_online {
+                margin: 12px 0;
+
+                p {
+                    line-height: 1.4;
+                    padding: 2px 0;
+                }
+            }
+        }
+        img.cash-money-icon {
+            bottom: 5%;
+            left: 42.5%;
+            position: absolute;
+            width: 15%;
+        }
+    }
+    .home-container {
+        max-width: 768px;
+
+        h1 {
+            font-size: 4.2em;
+            letter-spacing: .5px;
+            margin: 80px 0 20px;
+        }
+    
+        p.links {
+            font-size: 2.1em;
+            margin-bottom: 80px;
+        }
+    
+        #adobe-dc-view {
+            height: calc(768px * .9 * .85 * 1.2941);
+            margin-bottom: 80px;
+            width: 85%;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -226,9 +444,38 @@
 }
 
 @media screen and (min-width: 1600px) {
-
+    
 }
 
 @media screen and (min-width: 1920px) {
+    .border-container {
+        margin: 60px auto 20px;
+        max-width: 1024px;
 
+        img.home_bg {
+            margin-left: -10%;
+            width: 120%;
+            z-index: -1;
+        }
+    
+        .content {
+
+            img.coin-text {
+                margin: 120px 0 2px;
+            }
+    
+            .symbol, .total_supply, .tokenomics, .contact_address, .visit_online {
+                margin: 20px 0;
+            }
+        }
+    }
+    .home-container {
+        max-width: 1024px;
+
+        #adobe-dc-view {
+            height: calc(1024px * .9 * .85 * 1.2941);
+            margin-bottom: 80px;
+            width: 85%;
+        }
+    }
 }

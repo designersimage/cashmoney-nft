@@ -38,7 +38,7 @@
         }
     }
 
-    .menu {
+    nav.menu {
         background: black;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
         display: flex;
@@ -201,7 +201,7 @@
             }
         }
 
-        .menu {
+        nav.menu {
             top: 70px;
         }
 
@@ -259,11 +259,11 @@
             }
         }
 
-        .di-menu {
+        nav.menu {
             top: 80px;
         }
 
-        .di-menu-toggle {
+        .menu-toggle {
             height: 4rem;
             width: 4rem;
             font-size: 4rem;
@@ -305,7 +305,87 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    .header__main {
+
+        .container {
+            justify-content:unset;
+        }
+
+        .header__logo {
+            justify-self: flex-start;
+            img#logo {
+                height: 40px;
+            }
+        }
+
+        .header__title {
+            justify-self: flex-start;
+            margin: 0 40px;
+
+            img#logo-title {
+                height: 50px;
+            }
+        }
+
+        nav.menu {
+            align-items: center;
+            background: none;
+            box-shadow: unset;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            height: 80px;
+            justify-self: flex-end;
+            padding: unset;
+            position: relative;
+            right: unset;
+            top: unset;
+            width: auto;
+
+            .menu__nav {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                justify-content: flex-end;
+                list-style: none;
+                padding-top: unset;
+                text-align: right;
+                z-index: unset;
+        
+                li {
+                    border-top: unset;
+                    margin: 0 0 0 30px;
+                    width: auto;
+        
+                    a {
+                        font-size: 1.6rem;
+                        @include animate( color, 250ms );
+                    }
+        
+                }
+            }
+
+            &.closed {
+                transform: unset;
+
+                .menu__nav {
+                    opacity: unset;
+                }
+            }
+
+            &.open {
+                transform: unset;
+
+                .menu__nav {
+                    opacity: unset;
+                }
+            }
+        }  
+
+        .menu-toggle {
+            display: none;
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {

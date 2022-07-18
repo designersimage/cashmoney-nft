@@ -57,39 +57,37 @@ export const contactForm = () => {
         }
 
         // ajax http post request
-        // let url = e.target.dataset.url;
-        // let params = new URLSearchParams(new FormData(e.target));
+        let url = e.target.dataset.url;
+        let params = new URLSearchParams(new FormData(e.target));
         
-        // const fetchData = {
-        //     method: "POST",
-        //     body: params
-        // };
+        const fetchData = {
+            method: "POST",
+            body: params
+        };
         
         e.target.querySelector('.js-form-submission').classList.add('show');
         
-        // fetch( url, fetchData)
-        //     .then(res => res.json())
-        //     .catch(error => {
-        //         resetMessages();
-        //         showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
-        //         e.target.querySelector('button[type="submit"]').disabled = false;
-        //     })
-        //     .then(response => {
+        fetch( url, fetchData )
+            .then(res =>  res.json())
+            .catch(error => {
+                resetMessages();
+                //showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+                e.target.querySelector('button[type="submit"]').disabled = false;
+            })
+            .then(response => {
                 
-        //         resetMessages();
-        //         // deal with the response
-        //         if ( response === 0 || response.status === 'error' ) {
-        //             showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
-        //             e.target.querySelector('button[type="submit"]').disabled = false;
-        //             return;
-        //         }
-                
-        //         showModal( 'success', 'Success!', 'Message Successfully submitted, thank you! We will be in contact with you shortly.');
-        //         e.target.querySelector('button[type="submit"]').disabled = false;
-        //         e.target.querySelector('.di-select-container > .di-select-value').innerText = 'Select a reason...';
-        //         e.target.querySelector('.di-select-container > .di-select-value').classList.add('placeholder');
-        //         e.target.reset();
-        //     });
+                resetMessages();
+                // deal with the response
+                if ( response === 0 || response.status === 'error' ) {
+                    //showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+                    e.target.querySelector('button[type="submit"]').disabled = false;
+                    return;
+                }
+                console.log(response)
+                //showModal( 'success', 'Success!', 'Message Successfully submitted, thank you! We will be in contact with you shortly.');
+                e.target.querySelector('button[type="submit"]').disabled = false;
+                e.target.reset();
+            });
         
     });
 }   

@@ -38,6 +38,7 @@ main {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        max-width: 768px;
         width: 90%;
     }
     .contact-container {
@@ -46,6 +47,7 @@ main {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        max-width: 768px;
         width: 90%;
     }
 }
@@ -128,15 +130,30 @@ main {
 }
 
 @media screen and (min-width: 425px) {
-    
+    .border-token-height-50 {
+        background: url("./images/token_bg.png") 0 0 repeat-x;
+        background-size: contain;
+        content: '';
+        height: 90px;
+        margin: 15px auto;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 540px) {
-    
+    .border-token-height-50 {
+        height: 110px;
+        margin: 20px auto;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    
+    .border-token-height-50 {
+        height: 160px;
+        margin: 20px auto;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 1024px) {

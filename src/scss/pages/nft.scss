@@ -25,7 +25,7 @@ p.intro {
     display: block;
     margin: 40px auto 40px;
     min-height: 100px;
-    overflow: hidden;
+    //overflow: hidden;
     position: relative;
     width: 105%;
 
@@ -41,7 +41,7 @@ p.intro {
             margin-right: -55%;
             margin-top: 0;
             margin-left: 10px;
-            overflow: hidden;
+            //overflow: hidden;
             -webkit-shape-outside: circle(55%);
             shape-outside: circle(55%);
             float: right;
@@ -279,7 +279,7 @@ p.intro {
         display: block;
         margin: 40px auto -20px;
         min-height: 100px;
-        overflow: hidden;
+        //overflow: hidden;
         position: relative;
         width: 105%;
     
@@ -292,7 +292,7 @@ p.intro {
                 margin-right: -45%;
                 margin-top: 0;
                 margin-left: 10px;
-                overflow: hidden;
+                //overflow: hidden;
                 width: 250px;
             }
         
@@ -430,7 +430,7 @@ p.intro {
         display: block;
         margin: 40px auto 20px;
         min-height: 100px;
-        overflow: hidden;
+        //overflow: hidden;
         position: relative;
         width: 105%;
     
@@ -443,7 +443,7 @@ p.intro {
                 margin-right: -35%;
                 margin-top: 0;
                 margin-left: 10px;
-                overflow: hidden;
+                //overflow: hidden;
                 width: 250px;
             }
         
@@ -816,11 +816,439 @@ p.intro {
 }
 
 @media screen and (min-width: 540px) {
+    p.intro {
+        font-size: 1.6em;
+        margin: 40px 0;
+    }
+
+    .token-bg {
+        margin-bottom: -40px;
     
+        .container {
+            position: relative;
+            width: 100%;
+    
+            .right {
+                height: 350px;
+                margin-right: -35%;
+                width: 350px;
+            }
+        
+            p {
+                font-size: 1.4em;
+                margin-bottom: 50px;
+                width: 100%;
+            }
+        }
+    
+        img.cash-money-token {
+            height: 350px;
+            right: -35%;
+            width: 350px;
+        }
+    }
+
+    .buy-now {
+        width: 100%;
+    
+        .token-info {
+            margin-bottom: 20px;
+            .right {
+                .cash-money {
+                    margin-bottom: 20px;
+                    width:100px;
+                }
+                p {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    
+        .button-info {
+            p {
+                font-size: 1.3em;
+            }
+        }
+        .button-info2 {
+            margin: 0px 0 40px;
+    
+            h2 {
+                font-size: 2.1em;
+            }
+
+            .form-range {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .money-info {
+        margin: 10px auto 30px;
+    
+        .right {
+            height: 195px;
+            margin-right: 0;
+            margin-top: 0;
+            margin-left: 10px;
+            -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            width: 165px;
+        }
+    
+        p {
+            font-size: 1.5em;
+            padding: 15px;
+            padding-right: 0px;
+    
+            &::before {
+                border-top: 195px solid rgb(28, 164, 105);
+                border-right: 160px solid transparent;
+            }
+        }
+    
+        img.money-sign {
+            top: 140px;
+            bottom: -40px;
+            width: 85px;
+        }
+    }
+
+    .join-info {
+        display: flex;
+        margin: 50px auto 40px;
+        position: relative;
+        width: 100%;
+    
+        .left {
+            display: block;
+            flex: 0 25%;
+    
+            img.nft {
+                background-color: white;
+                display: block;
+                height: 130px;
+                margin-bottom: 20px;
+                width: 130px;
+            }
+        }
+    
+        .right {
+            flex: 1;
+            padding-left: 40px;
+            text-align: right;
+    
+            p {
+                font-size: 1.8em;
+                line-height: 1.5;
+                margin: 15px 0 30px;
+            }
+    
+            p.address-small {
+                font-size: 1.2em;
+                font-weight: bold;
+                line-height: 1.2;
+                word-break: break-all;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
+    .cash-money-text {
+        margin: 80px 0 20px 0;
+        width: 60%;
+    }
+    .series-one-text {
+        margin: 0;
+        width: 30%;
+    }
+
+    p.intro {
+        font-size: 2.1em;
+        margin: 60px 0;
+    }
+
+    .token-bg {
+        margin-bottom: -60px;
     
+        .container {
+            position: relative;
+            width: 100%;
+    
+            .right {
+                height: 450px;
+                margin-right: -30%;
+                width: 450px;
+            }
+        
+            p {
+                font-size: 1.8em;
+                margin-bottom: 50px;
+                width: 100%;
+            }
+        }
+    
+        img.cash-money-token {
+            height: 450px;
+            right: -30%;
+            width: 450px;
+        }
+    }
+
+    .buy-now {
+        width: 100%;
+    
+        .token-info {
+            margin-bottom: 20px;
+            .right {
+                .cash-money {
+                    margin-bottom: 30px;
+                    width:150px;
+                }
+                p {
+                    font-size: 2.4em;
+                }
+            }
+        }
+    
+        .button-info {
+            p {
+                font-size: 1.8em;
+            }
+        }
+        .button-info2 {
+            margin: 0px 0 40px;
+    
+            h2 {
+                font-size: 2.1em;
+            }
+
+            .form-range {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .money-info {
+        margin: 10px auto 30px;
+    
+        .right {
+            height: 250px;
+            margin-right: 0;
+            margin-top: 0;
+            margin-left: 10px;
+            -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            width: 200px;
+        }
+    
+        p {
+            font-size: 2.1em;
+            padding: 15px;
+            padding-right: 0px;
+    
+            &::before {
+                border-top: 250px solid rgb(28, 164, 105);
+                border-right: 200px solid transparent;
+            }
+        }
+    
+        img.money-sign {
+            top: 160px;
+            width: 120px;
+        }
+    }
+
+    .join-info {
+        display: flex;
+        margin: 50px auto 40px;
+        position: relative;
+        width: 100%;
+    
+        .left {
+            display: block;
+            flex: 0 30%;
+    
+            img.nft {
+                background-color: white;
+                display: block;
+                height: 160px;
+                margin-bottom: 20px;
+                width: 160px;
+            }
+        }
+    
+        .right {
+            flex: 1;
+            padding-left: 40px;
+            text-align: right;
+    
+            p {
+                font-size: 2.4em;
+                line-height: 1.5;
+                margin: 15px 0 30px;
+            }
+    
+            p.address-small {
+                font-size: 1.4em;
+                font-weight: bold;
+                line-height: 1.2;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .cash-money-text {
+        margin: 80px 0 20px 0;
+        width: 60%;
+    }
+    .series-one-text {
+        margin: 0;
+        width: 30%;
+    }
+
+    p.intro {
+        font-size: 2.1em;
+        margin: 60px 0;
+    }
+
+    .token-bg {
+        margin-bottom: -60px;
+    
+        .container {
+            position: relative;
+            width: 100%;
+    
+            .right {
+                height: 450px;
+                margin-right: -30%;
+                width: 450px;
+            }
+        
+            p {
+                font-size: 1.8em;
+                margin-bottom: 50px;
+                width: 100%;
+            }
+        }
+    
+        img.cash-money-token {
+            height: 450px;
+            right: -30%;
+            width: 450px;
+        }
+    }
+
+    .buy-now {
+        width: 100%;
+    
+        .token-info {
+            margin-bottom: 20px;
+            .right {
+                .cash-money {
+                    margin-bottom: 30px;
+                    width:150px;
+                }
+                p {
+                    font-size: 2.4em;
+                }
+            }
+        }
+    
+        .button-info {
+            p {
+                font-size: 1.8em;
+            }
+        }
+        .button-info2 {
+            margin: 0px 0 40px;
+    
+            h2 {
+                font-size: 2.1em;
+            }
+
+            .form-range {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .money-info {
+        margin: 10px auto 30px;
+    
+        .right {
+            height: 240px;
+            margin-right: 0;
+            margin-top: 0;
+            margin-left: 10px;
+            -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+            width: 200px;
+        }
+    
+        p {
+            font-size: 2.2em;
+            padding: 15px;
+            padding-right: 0px;
+    
+            &::before {
+                border-top: 240px solid rgb(28, 164, 105);
+                border-right: 200px solid transparent;
+            }
+        }
+    
+        img.money-sign {
+            top: 160px;
+            width: 120px;
+        }
+    }
+
+    .join-info {
+        display: flex;
+        margin: 50px auto 40px;
+        position: relative;
+        width: 100%;
+    
+        .left {
+            display: block;
+            flex: 0 30%;
+    
+            img.nft {
+                background-color: white;
+                display: block;
+                height: 160px;
+                margin-bottom: 20px;
+                width: 160px;
+            }
+        }
+    
+        .right {
+            flex: 1;
+            padding-left: 40px;
+            text-align: right;
+    
+            p {
+                font-size: 2.4em;
+                line-height: 1.5;
+                margin: 15px 0 30px;
+            }
+    
+            p.address-small {
+                font-size: 1.4em;
+                font-weight: bold;
+                line-height: 1.2;
+                word-break: break-all;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
