@@ -190,15 +190,6 @@
             button {
                 background: white;
                 color: $yellow;
-
-                &:active {
-                    background: lighten($yellow, 25);
-                    color: white;
-                }
-                &:hover {
-                    background: lighten($yellow, 25);
-                    color: white;
-                }
             }
         }
     }
@@ -209,7 +200,7 @@
             box-shadow: none;
 
             h3 {
-                color: white;
+                color: $grey-medium;
                 text-transform: lowercase;
             }
             main {
@@ -222,6 +213,27 @@
 
             button {
                 display: none;
+            }
+        }
+    }
+
+    &.standard {
+        .modal-content {
+            h3 {
+                color: $grey-medium;
+                text-transform: uppercase;
+            }
+            main {
+                color: white;
+            }
+
+            .btn-cancel {
+                display: none; 
+            }
+            
+            button {
+                background: white;
+                color: black;
             }
         }
     }

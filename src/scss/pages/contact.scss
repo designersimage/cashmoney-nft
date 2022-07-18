@@ -7,7 +7,7 @@
 
 .contact-container {
     h1 {
-        color: #cccccc;
+        color: $grey-medium;
         font-family: 'Impact', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 3.2em;
         font-weight: 400;
@@ -17,7 +17,7 @@
     }
 
     p {
-        color: #999999;
+        color: $grey;
         font-size: 1.2em;
         margin-bottom: 20px;
     }
