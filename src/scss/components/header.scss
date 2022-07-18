@@ -57,7 +57,7 @@
             z-index: 0;
     
             li {
-                border-top: solid 1px #333333;
+                border-top: solid 1px $grey-black;
                 width: 100%;
     
                 a {
@@ -74,19 +74,19 @@
                     @include animate( color, 250ms );
 
                     &:active {
-                        color: #cccccc;
+                        color: $grey-medium;
                     }
                     &:hover {
-                        color: #cccccc;
+                        color: $grey-medium;
                     }
                 }
 
                 &.current-menu-item a {
-                    color: #cccccc;
+                    color: $grey-medium;
                     font-weight: 500;
                 }
                 &.current-page-ancestor a {
-                    color: #333333;
+                    color: $grey-black;
                     font-weight: 500;
                 }
     
@@ -123,14 +123,14 @@
     .menu-toggle {
         background: none;
         border: none;
-        color: #cccccc;
+        color: $grey-medium;
         height: 2.4rem;
         padding: 0;
         position: relative;
         width: 2.4rem;
 
         &.closed .bar {
-            background: #cccccc;
+            background: $grey-medium;
             border-radius: 1px;
             content: ' ';
             display: block;
@@ -152,7 +152,7 @@
         }
 
         &.open .bar {
-            background: rgb(172, 60, 61);
+            background: $red;
             border-radius: 1px;
             content: ' ';
             display: block;
@@ -177,10 +177,10 @@
 
         &:active {
             background: none;
-            color: #cccccc;
+            color: $grey-medium;
         }
         &:hover {
-            color: #cccccc;
+            color: $grey-medium;
         }
     }
 }

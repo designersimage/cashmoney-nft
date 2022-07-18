@@ -22,6 +22,30 @@
     }
 }
 
+.btn-submit {
+    background: white;
+    color: black;
+
+    &:disabled {
+        background: $grey-light;
+
+        &:active {
+            background: $grey-light;
+            cursor: default;
+        }
+        &:hover {
+            background: $grey-light;
+            cursor: default;
+        }
+    }
+}
+
+.btn-cancel {
+    background: $red;
+    border: transparent;
+    color: white;
+}
+
 @media screen and (min-width: 360px) {
     .button {
         font-size: 1.8em;

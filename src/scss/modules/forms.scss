@@ -19,29 +19,29 @@
         width: 100%;
 
         label {
-            color: #999999;
+            color: $grey-medium;
             display: block;
             font-size: 1.4em;
             margin-bottom: 5px;
             width: 100%;
     
             span {
-                color: rgb(172, 60, 61);
+                color: $red;
                 font-size: 0.9em;
                 font-style: italic;
                 font-weight: 100;
             }
     
             &.error {
-                color: rgb(172, 60, 61);
+                color: $red;
             }
         }
     
         input[type="email"], input[type="text"] {
             align-self: flex-start;
             background: white;
-            border: 1px solid #999999;
-            color: #333333 !important;
+            border: 1px solid $grey-medium;
+            color: $grey-black !important;
             font-family: 'Avenir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1.6em;
             outline: none !important;
@@ -49,17 +49,17 @@
             width: 100%;
     
             &:active {
-                border-color: #333333;
+                border-color: $grey-black;
             }
             &:focus {
-                border-color: #333333;
+                border-color: $grey-black;
             }
         }
     
         textarea {
             background: white;
-            border: 1px solid #999999;
-            color: #333333;
+            border: 1px solid $grey-medium;
+            color: $grey-black;
             font-family: 'Avenir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1.6em;
             outline: none !important;
@@ -68,10 +68,10 @@
             width: 100%;
     
             &:active {
-                border-color: #333333;
+                border-color: $grey-black;
             }
             &:focus {
-                border-color: #333333;
+                border-color: $grey-black;
             }
         }
     
@@ -81,39 +81,39 @@
     
         &.error {
             input[type="email"], input[type="text"] {
-                background: lighten(rgb(172, 60, 61), 50);
-                border: 1px solid rgb(172, 60, 61);
+                background: lighten($red, 50);
+                border: 1px solid $red;
         
                 &:active {
                     background: white;
-                    border-color: #333333;
+                    border-color: $grey-black;
                 }
                 &:focus {
                     background: white;
-                    border-color: #333333;
+                    border-color: $grey-black;
                 }
             }
         
             label {
-                color: rgb(172, 60, 61);
+                color: $red;
             }
         
             textarea {
-                background: lighten(rgb(172, 60, 61), 50);
-                border: 1px solid rgb(172, 60, 61);
+                background: lighten($red, 50);
+                border: 1px solid $red;
         
                 &:active {
                     background: white;
-                    border-color: #333333;
+                    border-color: $grey-black;
                 }
                 &:focus {
                     background: white;
-                    border-color: #333333;
+                    border-color: $grey-black;
                 }
             }
     
             .field-msg {
-                color: rgb(172, 60, 61);
+                color: $red;
                 display: block;
             }
     
@@ -121,7 +121,7 @@
     
         .field-msg {
             bottom: -15px;
-            color: #999999;
+            color: $grey;
             display: none;
             font-size: .9em;
             font-style: italic;
@@ -134,7 +134,7 @@
             &.js-form-error {
                 bottom: 0px;
                 clear: right;
-                color: rgb(172, 60, 61);
+                color: $red;
                 display: none;
                 left: unset;
                 padding-top: 10px;
@@ -149,7 +149,7 @@
             &.js-form-submission {
                 bottom: 0px;
                 clear: both;
-                color: #999999;
+                color: $grey;
                 display: none;
                 left: unset;
                 padding-top: 10px;
@@ -164,7 +164,7 @@
             &.js-form-success {
                 bottom: 0;
                 clear: right;
-                color: rgb(28, 164, 105);
+                color: $green;
                 display: none;
                 left: unset;
                 padding-top: 10px;

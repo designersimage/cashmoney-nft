@@ -18,7 +18,12 @@ p.intro {
     color: white;
     font-weight: 400;
     font-size: 1.1em;
+    margin: 40px 0 0;
+}
+
+p.main {
     margin: 40px 0;
+    text-align: center;
 }
 
 .token-bg {
@@ -53,6 +58,7 @@ p.intro {
             color: white;
             font-size: .8em;
             margin-bottom: 50px;
+            margin-left: -8px;
             padding: 10px;
             padding-right: 0px;
             width: 100%;
@@ -423,7 +429,11 @@ p.intro {
 @media screen and (min-width: 375px) {
     p.intro {
         font-size: 1.3em;
-        margin: 40px 0;
+    }
+
+    p.main {
+        font-size: 1.4em;
+        text-align: center;
     }
 
     .token-bg {
@@ -751,7 +761,12 @@ p.intro {
 @media screen and (min-width: 425px) {
     p.intro {
         font-size: 1.6em;
-        margin: 40px 0;
+        margin: 40px 0 0;
+    }
+
+    p.main {
+        font-size: 1.8em;
+        text-align: center;
     }
 
     .token-bg {
@@ -818,7 +833,7 @@ p.intro {
 @media screen and (min-width: 540px) {
     p.intro {
         font-size: 1.6em;
-        margin: 40px 0;
+        margin: 40px 0 0;
     }
 
     .token-bg {
@@ -967,7 +982,13 @@ p.intro {
 
     p.intro {
         font-size: 2.1em;
+        margin: 60px 0 0;
+    }
+
+    p.main {
+        font-size: 2.4em;
         margin: 60px 0;
+        text-align: center;
     }
 
     .token-bg {
@@ -1111,11 +1132,6 @@ p.intro {
     .series-one-text {
         margin: 0;
         width: 30%;
-    }
-
-    p.intro {
-        font-size: 2.1em;
-        margin: 60px 0;
     }
 
     .token-bg {

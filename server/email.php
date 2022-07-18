@@ -21,81 +21,49 @@ try {
     $mail->Username   = 'contact@cashmoneycoin.io';             //SMTP username
     $mail->Password   = 'CashMoneyCoin';                        //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-    //Recipients
+    $mail->Port       = 465;                                 //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     $mail->setFrom('contact@cashmoneycoin.io', 'Cash Money Coin');
-    $mail->addAddress('jonathan@designersimage.io', 'Joe User');     //Add a recipient
-    //$mail->addAddress('ellen@example.com');                         //Name is optional
-    
 
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    if (isset($_POST['email']) && isset($_POST['message'])) {
+        $name = isset($_POST['name']) ? $_POST['name'] : '';
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+
+        //Recipients
+        $mail->addAddress('jonathan@designersimage.io');    //Add a recipient, Name is optional
+        $contentHTML = 'Message received from ';
+        $contentHTML .= isset($_POST['name']) ? $name . ' (' . $email . ')<br><br>' : $email . '<br><br>';
+        $contentHTML .= 'Message:<br>';
+        $contentHTML .= $message;
+
+        $content = 'Message received from ';
+        $content .= isset($_POST['name']) ? $name . ' (' . $email . ')\r\n\r\n' : $email . '\r\n\r\n';
+        $content .= 'Message:\r\n';
+        $content .= $message;
     
-    $mail->send();
-    die(json_encode([
-        'status' => 'Success',
-        'message' => 'Message Successfully submitted, thank you! We will be in contact with you shortly.'
-    ]));
+        //Content
+        $mail->isHTML(true);                                            //Set email format to HTML
+        $mail->Subject = 'Contact Message Received';
+        $mail->Body    = $contentHTML;
+        $mail->AltBody = nl2br($content);
+        
+        if (!$mail->send()) {
+            die(json_encode([
+                'status' => 'error',
+                'message' => $mail->ErrorInfo
+            ]));
+        } else {
+            die(json_encode([
+                'status' => 'success',
+                'message' => 'Message Successfully submitted, thank you! We will be in contact with you shortly.'
+            ]));
+        }
+        
+    }
+
 } catch (Exception $e) {
     die(json_encode([
         'status' => 'error',
         'message' => $mail->ErrorInfo
     ]));
 }
-
-// if (isset($_POST['email']) && isset($_POST['message'])) {
-//     $name = isset($_POST['name']) ? $_POST['name'] : '';
-//     $email = $_POST['email'];
-//     $message = $_POST['message'];
-
-
-//     $mail->setFrom('contact@cashmoneycoin.io', 'Cash Money Coin');
-//     $mail->addAddress('jonathan@designersimage.io', 'Me');
-//     $mail->Subject = 'Contact Message Received';
-
-//     // Set HTML
-//     $mail->isHTML(TRUE);
-//     $mail->Body = '<html>Hi there, we are happy to <br>confirm your booking.</br> Please check the document in the attachment.</html>';
-//     $mail->AltBody = 'Hi there, we are happy to confirm your booking. Please check the document in the attachment.';
-    
-//     // send the message
-//     if(!$mail->send()){
-//         die(json_encode([
-//             'status' => 'error',
-//             'message' => $mail->ErrorInfo
-//         ]));
-//     } else {
-//         die(json_encode([
-//             'status' => 'Success',
-//             'message' => 'Message Successfully submitted, thank you! We will be in contact with you shortly.'
-//         ]));
-//     }
-
-    
-// }
-
-
-
-
-
-// if(isset($_GET['email']) && isset($_GET['message']))
-// {
-//     $to = "jonathan.wheeler87@gmail.com";
-//     $subject = "Contact Message Received";
-//     $headers = "From: contact@cashmoneycoin.io";
-
-//     $retval = mail($to,$subject,$message,$headers);
-
-//     if ($retval == true) {
-//         die(json_encode([
-//             'value' => 1,
-//             'error' => null,
-//             'data' => $data
-//         ]));
-//     }
-    
-// }

@@ -7,6 +7,7 @@
     |   CONTACT FORM FUNCTIONS                       |
     --------------------------------------------------
 */
+import { showModal, closeModal } from './modal';
 
 export const contactForm = () => {
     const contact = document.querySelector('#contact-form');
@@ -30,7 +31,7 @@ export const contactForm = () => {
 
         // reset the form messages
         resetMessages();
-        // showModal( 'loading', 'Processing...', '' );
+        showModal( 'loading', 'Processing...', '' );
         
         // collect all the data
         let formData = {
@@ -51,7 +52,7 @@ export const contactForm = () => {
         }
 
         if ( formInvalid ) {
-            // showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+            showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
             e.target.querySelector('button[type="submit"]').disabled = false;
             return;
         }
@@ -71,20 +72,21 @@ export const contactForm = () => {
             .then(res =>  res.json())
             .catch(error => {
                 resetMessages();
-                //showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+                showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
                 e.target.querySelector('button[type="submit"]').disabled = false;
             })
             .then(response => {
                 
                 resetMessages();
                 // deal with the response
-                if ( response === 0 || response.status === 'error' ) {
-                    //showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+                if ( response && response.status === 'error' ) {
+                    showModal( 'error', 'Error!', 'There was a problem with the Contact Form, please try again!');
+                    console.log(response)
                     e.target.querySelector('button[type="submit"]').disabled = false;
                     return;
                 }
-                console.log(response)
-                //showModal( 'success', 'Success!', 'Message Successfully submitted, thank you! We will be in contact with you shortly.');
+                
+                showModal( 'success', 'Success!', 'Message Successfully submitted, thank you! We will be in contact with you shortly.');
                 e.target.querySelector('button[type="submit"]').disabled = false;
                 e.target.reset();
             });
@@ -100,7 +102,7 @@ export const contactForm = () => {
 function resetMessages() {
     document.querySelectorAll('[data-error]').forEach( field => field.classList.remove('error') );
     document.querySelector('.js-form-submission').classList.remove('show');
-    // closeModal();
+    closeModal();
 }
 
 

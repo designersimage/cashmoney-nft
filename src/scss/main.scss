@@ -6,9 +6,10 @@
 */
 
 // Main Base Styles
+@import './base/variables.scss';
+@import './base/mixins.scss';
 @import './base/fonts.scss';
 @import './base/reset.scss';
-@import './base/mixins.scss';
 @import './base/layout.scss';
 @import './base/buttons.scss';
 @import './base/links.scss';
