@@ -1,16 +1,16 @@
 /**
  *  @package CashMoney-NFT
 */
-
+import { modal } from './modules/modal';
 import { contactForm } from './modules/contact'
 
 ready((event) => {
 
+    // Load Modal JS
+    modal();
+
     // Load Contact Form
     contactForm();
-
-    // Load Modal JS
-    //modal();
 
 })
 

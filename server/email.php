@@ -30,7 +30,7 @@ try {
         $message = $_POST['message'];
 
         //Recipients
-        $mail->addAddress('jonathan@designersimage.io');    //Add a recipient, Name is optional
+        $mail->addAddress('alex@techwestdao.com');    //Add a recipient, Name is optional
         $contentHTML = 'Message received from ';
         $contentHTML .= isset($_POST['name']) ? $name . ' (' . $email . ')<br><br>' : $email . '<br><br>';
         $contentHTML .= 'Message:<br>';

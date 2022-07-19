@@ -3,15 +3,11 @@
 */
 
 import { menuToggle } from './modules/menu';
-import { modal } from './modules/modal';
 
 ready((event) => {
 
     // Load Menu Toggle
     menuToggle();
-
-    // Load Modal JS
-    modal();
 
 })
 
